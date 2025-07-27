@@ -1,75 +1,92 @@
-body {
-  font-family: Arial, Sans-Serif;
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 0;
+   * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background: #f2f2f2;
+  color: #333;
+  padding: 0 20px;
 }
+
 header {
-  background-color: #333;
-  text-align: center;
-  padding: 10px;
+  background: #0d0d0d;
   color: white;
-  margin-top: 20px;
-  border-radius: 20px;
-  border-bottom: 5px solid aqua;
+  padding: 20px 0;
+  margin-bottom: 10px;
 }
-.article {
-  background-color: white;
-  padding: 20px;
-  margin: 20px auto;
-  width: 85%;
-  max-width: 800px;
-  border-radius: 20px;
-  box-shadow: 0 10px 15px lightyellow;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 10px;
-}
-th, td {
-  text-align: left;
-  padding: 10px;
-}
-th {
-  background-color: #ccc;
-}
-.card {
-  background-color: white;
-  text-align: center;
-  width: 300px;
-  border-radius: 20px;
-  padding: 20px;
-}
-.card-container {
-  background-color: white;
+
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
 }
-.card img {
-  object-fit: cover;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 2px solid deepskyblue;
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
-.card button {
-  background-color: deepskyblue;
+
+nav a {
   color: white;
-  font-weight: bold;
-  font-family: Monospace; 
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
+  text-decoration: none;
 }
-.card button:hover {
-  background-color: blue;
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
+.hero p {
+  margin-bottom: 10px;
+}
+section {
+  padding: 40px 0;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 footer {
   text-align: center;
-  font-family: Times New Roman;
-  background-color: lightpink;
-  color: black;
+  padding: 20px;
+  background: #0d0d0d;
+  color: white;
+  margin-top: 20px;
+}
+.btn {
+  background: white;
+  color: #0052D4;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
