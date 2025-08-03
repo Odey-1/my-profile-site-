@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swift_OD Portfolio Sample - Fiverr Gig">
+  <title>Swift_OD Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }.hero {
+  background: linear-gradient(135deg, #000000, #333333);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+  </style>
+</head><body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Swift_OD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Hero Section -->  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4" data-aos="fade-up">Hi, I’m Swift_OD 👋</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">I build clean and responsive websites that just work.</p>
+      <a href="#contact" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="400">Let’s Work Together</a>
+    </div>
+  </section>  <!-- About Section -->  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-right">About Me</h2>
+      <p data-aos="fade-left">I’m a front-end developer who delivers fast and modern websites with HTML, CSS, and Bootstrap. I focus on clean design and great user experience.</p>
+    </div>
+  </section>  <!-- Projects Section -->  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="zoom-in">Projects</h2>
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Landing Page</h5>
+              <p class="card-text">Simple responsive landing page built with HTML & Bootstrap.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">Personal portfolio with contact form and smooth animations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Business Website</h5>
+              <p class="card-text">Corporate site layout with responsive sections and CTAs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Contact Section -->  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Contact Me</h2>
+      <form class="mt-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+        </div>
+        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+      </form>
+    </div>
+  </section>  <!-- Footer -->  <footer>
+    <div class="container">
+      <p>&copy; 2025 Swift_OD. All rights reserved.</p>
+    </div>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init();
+  </script>
+  </body>
+  </html>
